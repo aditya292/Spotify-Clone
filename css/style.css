@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Mysuru:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #000;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Hind Mysuru", sans-serif;
+}
+
+.sidebar {
+  width: 400px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+.sidebar-nav {
+  background: #121212;
+  border-radius: 8px;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+.sidebar-nav .logo {
+  width: 120px;
+}
+
+.sidebar-nav .logo img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+.sidebar-nav ul li {
+  padding: 10px 16px;
+}
+.sidebar-nav ul li .nav-icon:hover {
+  color: #fff;
+}
+
+.sidebar-nav ul li a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-size: 16px;
+  font-weight: 600;
+}
+.sidebar-nav ul li a i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.sidebar-nav .lib-box {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.sidebar-nav .lib-icon img {
+  width: 22px;
+}
+.lib-text {
+  font-size: 17px;
+}
+.lib-text:hover {
+  color: #fff;
+}
+
+.sidebar-nav .flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-nav .flex1 i {
+  color: #b3b3b3;
+  font-size: 16px;
+  /* border: 1px solid red; */
+  padding: 8px;
+  border-radius: 50%;
+  background: #121212;
+}
+.sidebar-nav .flex1 i:hover {
+  background: #1f1f1f;
+}
+.sidebar-scroll {
+  height: 170px;
+  overflow-y: scroll;
+  padding: 10px 0;
+  /* border: 1px solid red; */
+}
+.sidebar-scroll::-webkit-scrollbar {
+  background: transparent;
+  width: 12px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.sidebar-scroll:hover::-webkit-scrollbar-thumb {
+  /* background: #5e5d5d; */
+  background: rgba(94, 93, 93, 0.7);
+}
+
+.sidebar-scroll .item {
+  background: #1f1f1f;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 20px 20px;
+  /* border: 1px solid red; */
+}
+
+.sidebar-scroll .item h4 {
+  color: #fff;
+  font-family: "Hind Mysuru", sans-serif;
+}
+
+.sidebar-scroll .item p {
+  color: #fff;
+  font-size: 13px;
+  font-family: "Hind Mysuru", sans-serif;
+}
+.sidebar-scroll .item button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: ease;
+}
+.sidebar-scroll .item button:hover {
+  scale: 1.05;
+}
+.privacy ul {
+  list-style: none;
+  margin-top: 5px;
+}
+.privacy ul li {
+  padding: 0 12px;
+}
+.privacy ul li a {
+  text-decoration: none;
+  color: #818080;
+  font-size: 11px;
+  font-weight: 600;
+  margin: 0 6px;
+}
+.privacy ul li .cookies {
+  font-size: 12px;
+  color: #f2f2f2;
+}
+.privacy ul li .cookies:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+.eng-btn {
+  padding: 20px 20px;
+}
+
+.eng-btn button {
+  padding: 8px 14px;
+  background: transparent;
+  outline: none;
+  border: 0.5px solid #818080;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.eng-btn button:hover {
+  scale: 1.05;
+  border-color: #fff;
+}
+.eng-btn button i {
+  margin-right: 4px;
+  font-size: 16px;
+}
+
+/* main section starts from here  */
+
+.main-section {
+  margin-left: 400px;
+  /* background: #121212; */
+  background: transparent;
+
+  border-radius: 7px;
+}
+
+.top-nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  background: #000;
+  z-index: 1000;
+}
+.top-nav button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.top-nav .prev-btn button {
+  background: black;
+  border: none;
+  outline: none;
+  padding: 9px 13px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.top-nav .prev-btn button i {
+  color: #818080;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.top-nav .prev-btn button:hover i {
+  color: #fff;
+}
+.top-nav .login-btn .sign-up {
+  color: #818080;
+  font-size: 16px;
+  font-weight: 600;
+  transition: ease;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.top-nav .login-btn .sign-up:hover {
+  color: #fff;
+  font-size: 16.5px;
+}
+
+.top-nav .login-btn .log-in {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 30px;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 30px;
+}
+.top-nav .login-btn .log-in:hover {
+  background: #efecec;
+  scale: 1.03;
+}
+
+.spotify-playlist {
+  padding: 20px 10px;
+  background: #121212;
+}
+.spotify-playlist .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin-bottom: 5px;
+}
+.spotify-playlist .header a {
+  text-decoration: none;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.spotify-playlist .header a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #d2cccc;
+}
+.spotify-playlist h2 {
+  color: #fff;
+  font-size: 23px;
+  cursor: pointer;
+}
+.spotify-playlist h2:hover {
+  text-decoration: underline;
+}
+.spotify-playlist .card {
+  display: flex;
+  overflow: hidden;
+  gap: 5px;
+}
+
+.spotify-playlist .card .item {
+  background: #121212;
+  width: 160px;
+  min-width: 140px;
+  cursor: pointer;
+  padding: 10px 10px 15px 10px;
+  border-radius: 6px;
+}
+.spotify-playlist .card .item:hover {
+  background: #1f1f1f;
+}
+
+.spotify-playlist .card .item img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.spotify-playlist .card .item h4 {
+  color: #fff;
+  font-weight: 100;
+  font-size: 17px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.spotify-playlist .card .item h4:hover {
+  text-decoration: underline;
+}
+.spotify-playlist .card .item p {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+}
+.spotify-playlist .card .item p:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.7px;
+}
+.spotify-playlist .card .item .play-btn {
+  position: relative;
+}
+.spotify-playlist .card .item .play-btn i {
+  position: absolute;
+  background: #1db954;
+  padding: 14px 16px;
+  border-radius: 50%;
+  font-size: 17px;
+  right: 5px;
+  top: -50px;
+  transition: 0.3s;
+  opacity: 0;
+}
+.spotify-playlist .card .item:hover .play-btn i {
+  top: -75px;
+  /* transform: translateY(-25px); */
+  opacity: 1;
+  z-index: 1;
+}
+
+/* artist section */
+.artist {
+  background: linear-gradient(#212121, #121212);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.artist .card .item {
+  background: transparent;
+  width: 160px;
+  min-width: 140px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.artist .card .item img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.artist .card .item p:hover {
+  text-decoration: none;
+}
+
+/* radio section */
+
+.radio-sec .card .item p {
+  color: #b3b3b3;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.radio-sec .card .item p:hover {
+  text-decoration: none;
+}
+
+/* footer */
+
+.footer-section {
+  padding: 50px 30px;
+  background: #121212;
+  margin-bottom: 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.footer-section .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-section .footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.footer-section .footer .footer-links .footer-column {
+  /* border: 1px solid red; */
+  margin: 0 12px;
+}
+
+.footer-section .footer .footer-links .footer-column div {
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer .footer-links .footer-column .col-links {
+  list-style: none;
+}
+
+.footer .footer-links .footer-column .col-links li {
+  padding: 1px 0;
+}
+.footer .footer-links .footer-column .col-links li a {
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+.footer .footer-links .footer-column .col-links li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.5px;
+}
+.footer .social-links div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer .social-links div i {
+  padding: 12px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 50%;
+  background: #292929;
+}
+.footer .social-links div i:hover {
+  background: #727272;
+}
+
+.footer-section hr {
+  border: 0.5px solid #212121;
+  margin: 30px 0;
+}
+.footer-section span {
+  color: #cfcfcf;
+  font-size: 15px;
+}
